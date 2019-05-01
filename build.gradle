@@ -1,5 +1,5 @@
 plugins {
-    id 'kotlin-multiplatform' version '1.3.30'
+    id 'kotlin-multiplatform' version '1.3.31'
 }
 repositories {
     mavenCentral()
@@ -30,6 +30,8 @@ kotlin {
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib-jdk8')
+                implementation "com.cout970:MultiplatformVectorLib:1.0.7"
+                implementation "com.cout970:MultiplatformVectorLib-metadata:1.0.7"
                 implementation "com.cout970:MultiplatformVectorLib-jvm:1.0.7"
             }
         }
@@ -42,6 +44,8 @@ kotlin {
         jsMain {
             dependencies {
                 implementation kotlin('stdlib-js')
+                implementation "com.cout970:MultiplatformVectorLib:1.0.7"
+                implementation "com.cout970:MultiplatformVectorLib-metadata:1.0.7"
                 implementation "com.cout970:MultiplatformVectorLib-js:1.0.7"
             }
         }

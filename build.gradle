@@ -18,6 +18,7 @@ kotlin {
             dependencies {
                 implementation kotlin('stdlib-common')
                 implementation "com.cout970:MultiplatformVectorLib:1.0.7"
+                implementation "com.cout970:MultiplatformVectorLib-metadata:1.0.7"
             }
         }
         commonTest {
